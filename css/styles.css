@@ -5,9 +5,12 @@
 body {
   background-color: rgb(0, 2, 2);
   color: antiquewhite;
+  padding-bottom: 15px;
 }
 
 form {
   background-color: antiquewhite;
   color: rgb(0, 2, 2);
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
