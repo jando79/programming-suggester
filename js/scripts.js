@@ -6,7 +6,7 @@ function hideResults() {
 }
 
 //user interface logic
-window.onload = function() {
+window.onload = function(){
   document.querySelector("form").onsubmit = function(event) {
     event.preventDefault();
     hideResults();
@@ -19,10 +19,14 @@ window.onload = function() {
 
     if (operator === "yes" && operator2 === "snake" && operator3 === "sharp" || "dull") {
       document.getElementById("python").removeAttribute("class");
-    } else if (operator === "yes" && operator2 === "snake" || "turtle" && operator3 === "sharp") {
+    } else if (operator === "yes" && operator2 === "" && operator3 === "sharp") {
       document.getElementById("c").removeAttribute("class");
-    } else if (operator === "no" && operator2 === "snake" || "turtle" && operator3 === "sharp" || "dull") {
+    } else if (operator === "no" && operator2 === "" && operator3 === "") {
       document.getElementById("go").removeAttribute("class");
     }
   }
 }
+window.addEventListener("load", function() {
+  const form = document.getElementById("language-selector");
+  form.addEventListener("submit", event);
+});
