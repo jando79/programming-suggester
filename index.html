@@ -8,59 +8,42 @@
 
 <body>
 <h1>Programming Language Suggester</h1>
-  <p><em>Are you interested in coding, but having a difficult time deciding which language is best for you? <strong>You're in luck!</strong></em></p>
+  <p><em>Are you interested in coding? Are you having a difficult time deciding which language is best for you? <strong>You're in luck!</strong></em></p>
   <p>This survey is meant to help you determine that very thing. Simply answer the questions and click submit.</p>
+  
+  <form>
+    <h3><label for="radio1">Are you certain you want to code?</label></h3>
+      <input type="radio" name="operator" value="yes">HECK YES!!!</input><br>
+      <input type="radio" name="operator" value="no">I'm indecisive</input><br>
+    <br>
 
-  <h2>Are you sure you want to be a coder?</h2>
-  <form id="radio-form">
-    <label>
-      <input type="radio" name="yes" value="yes" checked>YES</label><br>
-    <label>
-      <input type="radio" name="no" value="no">NO</label><br>
-    <button type="submit">submit selection</button>
-    </form>
+    <h3>Do you prefer mornings or evenings?</h3>
+    <select id="mornings-or-evenings">
+      <option>Morning</option>
+      <option>Evening</option>
+      <option>Neither, I'm depressed</option>
+    </select><br>
+    <br>
 
-<h2>What is your favorite game?</h2>
-  <form id="select form">
-  <select id="game">
-    <option>badmitton</option>
-    <option>solitaire</option>
-    <option>mario cart</option>
-  </select>
-  <button type="submit">Submit Selection</button>
+    <h3>What color do you like best?</h3>
+    <select id="color">
+      <option>beige</option>
+      <option>fuscia</option>
+      <option>mauve</option>
+    </select><br>
+    <br>
+
+    <h3><label for="radio2">Which reptile would you rather be?</label></h3>
+    <input type="radio" name="operator2" value="snake">Snake</input><br>
+    <input type="radio" name="operator2" value="turtle">Turtle</input><br>
+    <br>
+
+    <h3><label for="radio3">Guess how many fingers I'm holding up?</label></h3>
+    <input type="radio" name="operator3" value="all">All of them</input><br>
+    <input type="radio" name="operator3" value="none">None of them</input><br>
+    <br>
+
+    <button type="submit">Submit</button>
   </form>
-
-  <h2>What color do you like best?</h2>
-  <form id="select form">
-  <select id="color">
-    <option>beige</option>
-    <option>fuscia</option>
-    <option>mauve</option>
-  </select>
-  <button type="submit">Submit Selection</button>
-  </form>
-
-<h2>What is your favorite animal?</h2>
-  <form id="radio-form">
-  <label>
-    <input type="radio" name="animal" value="platypus" checked>platypus</label><br>
-  <label>
-    <input type="radio" name="animal" value="snake">snake</label><br>
-  <label>
-    <input type="radio" name="animal" value="human">human</label><br>
-  <button type="submit">submit selection</button>
-  </form>
-
-<h2>What am I, the designer of this website, thinking at this very moment?</h2>
-<form id="radio-form">
-  <label>
-    <input type="radio" name="thinking" value="pizza" checked>I want pizza immediately</label><br>
-  <label>
-    <input type="radio" name="thinking" value="deoderant">Am I wearing deoderant</label><br>
-  <label>
-    <input type="radio" name="color" value="trick">Trick or treat</label><br>
-  <button type="submit">submit selection</button>
-  </form> 
-
 </body>
 </html>
