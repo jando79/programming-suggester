@@ -23,8 +23,7 @@
 
 ## Known Bugs
 
-* dull radio button defaults to image of python
-* no defaults set on radio buttons 
+* N/A
 
 ## License
 

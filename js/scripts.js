@@ -14,19 +14,16 @@ window.onload = function handleRadio(event) {
     const operator = document.querySelector("input[name='operator']:checked").value;
     const operator2 = document.querySelector("input[name='operator2']:checked").value;
     const operator3 = document.querySelector("input[name='operator3']:checked").value;
-    if (operator === "yes" && operator2 === "turtle" && operator3 === "dull") {
+    if (operator === "no") {
+      document.getElementById("mc").removeAttribute("class");
+    } if (operator === "yes" && operator2 === "turtle" && operator3 === "dull") {
       document.getElementById("go").removeAttribute("class");
     } else if (operator === "yes" && operator2 === "python" && operator3 === "dull") {
       document.getElementById("python").removeAttribute("class");
-    //} else if (operator === "no" && operator2 === "python" || operator2 === "turtle" && operator3 === "sharp" || operator3 === "dull") {
-      //document.getElementById("mc").removeAttribute("class");
-    } else if (operator === "yes" && operator2 === "python" || operator2 === "turtle" && operator3 === "sharp") {
+    } else if (operator === "yes" && operator2 === "python" && operator3 === "sharp") {
       document.getElementById("c").removeAttribute("class");
-    } else if (operator === "no" && operator2 === "python" || operator2 === "turtle" && operator3 === "sharp" || operator3 === "dull") {
-      document.getElementById("mc").removeAttribute("class");
-    }
+    } else if (operator === "yes" && operator2 === "turtle" && operator3 === "sharp") {
+      document.getElementById("c").removeAttribute("class");
+    }  
   }
 }
-window.addEventListener("load", function() {
-  document.getElementById("language-selector").addEventListener("submit", handleRadio);
-});
